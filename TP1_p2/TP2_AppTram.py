@@ -114,8 +114,8 @@ borrarPantalla()
 
 cont = 0
 
-for i in lista_Tram:
-    if (verTipo(lista_Tram(i))=="Cambio del Titular del Servicio"):
+for t in lista_Tram:
+    if (verTipo(lista_Tram(t))=="Cambio del Titular del Servicio"):
         cont+=1
     else:
         continue
@@ -124,8 +124,8 @@ print("La cantidad de Trámites de tipo Cambio de Titularidad son: ", cont, "\n\
 
 print("____*3")
 
-for i in lista_Tram:
-    if(verMes(lista_Tram(i))==3 and verDia(lista_Tram(i))>=10 and verDia(lista_Tram(i))<=25):
-        print(verTipo(lista_Tram(i)), " - ", verNroC(lista_Tram(i)))
+for t in lista_Tram:
+    if(verMes(lista_Tram(t))==3 and verDia(lista_Tram(t))>=10 and verDia(lista_Tram(t))<=25):
+        print(verTipo(lista_Tram(t)), " - ", verNroC(lista_Tram(t)))
     else:
         continue
